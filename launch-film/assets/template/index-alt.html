@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1920, height=1080" />
+    <title>Launch film 16:9 alt</title>
+    <link rel="stylesheet" href="src/tokens.css" />
+    <!-- Variant "alt" (16:9): same film, different hook (COPY.variants.alt). Render with: node tools/render.mjs 169 final --variant alt.
+         It loads the example act: when you replace act-example.js, delete this page (and COPY.variants.alt)
+         or rename it for your own variant and point its script tags at your acts. -->
+    <script>window.FORMAT = "169"; window.VARIANT = "alt";</script>
+    <!-- Load order: (gsap) -> engine -> timeline -> copy -> logo -> film -> parts -> boot.
+         GSAP is optional: it only bridges to HyperFrames (see Film.boot in src/film.js). -->
+    <script src="node_modules/gsap/dist/gsap.min.js"></script>
+    <script src="src/engine.js"></script>
+    <script src="src/timeline.js"></script>
+    <script>
+      // a variant may also override film times here, after timeline.js and before boot, e.g.
+      // window.T.O.ch1 = Object.assign({}, window.T.O.ch1, { sub: [Infinity] });   // hide a sub line
+    </script>
+    <script src="src/copy.js"></script>
+    <script src="src/logo.js"></script>
+    <script src="src/film.js"></script>
+    <style>html, body { width: 1920px; height: 1080px; }</style>
+  </head>
+  <body>
+    <!-- No static data-duration on the root: Film.boot() writes T.OUT_DURATION into it. -->
+    <div id="root" data-composition-id="main" data-start="0" data-width="1920" data-height="1080"></div>
+    <script src="src/parts/stage.js"></script>
+    <script src="src/parts/phone.js"></script>
+    <script src="src/parts/act-example.js"></script>
+    <script src="src/parts/pushes.js"></script>
+    <script src="src/parts/overlay-text.js"></script>
+    <script src="src/parts/touch.js"></script>
+    <script>window.Film.boot();</script>
+  </body>
+</html>

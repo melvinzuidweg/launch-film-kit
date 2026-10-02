@@ -1,0 +1,75 @@
+/*
+ * Design tokens: the ONLY place colours, the font and the UI radius are defined.
+ * JS reads them with Film.tok("--name") (src/film.js), so parts never hard-code a brand colour.
+ *
+ * >>> PLACEHOLDERS. Replace every value marked PLACEHOLDER with the product's real tokens. <<<
+ * Take them from the CSS that actually ships (the live website stylesheet, the app's token file),
+ * not from a design doc: design docs go stale. Then measure contrast (WCAG ratio, e.g. with the
+ * contrast() snippet in the kit's references/01-brief-research-truth.md §3; for text on rendered
+ * pixels, the one in references/07-qa-checklist.md §4) and write the ratio next to every colour
+ * that is used as text.
+ *
+ * Contrast rules that keep the film readable at feed size (360 px wide):
+ *   - Text on light needs >= 4.5:1. Many brand colours fail this (a typical "brand green" is
+ *     ~2.5:1 on white), so keep two tokens: --brand for fills, logo and decoration, and
+ *     --brand-ink, a darker version that passes, for highlighted words on light.
+ *   - A bright UI accent (live dots, waveforms) is never text on light.
+ */
+@font-face { font-family: "Inter"; src: url("../assets/fonts/Inter_400Regular.ttf") format("truetype"); font-weight: 400; font-style: normal; }
+@font-face { font-family: "Inter"; src: url("../assets/fonts/Inter_500Medium.ttf") format("truetype"); font-weight: 500; font-style: normal; }
+@font-face { font-family: "Inter"; src: url("../assets/fonts/Inter_600SemiBold.ttf") format("truetype"); font-weight: 600; font-style: normal; }
+@font-face { font-family: "Inter"; src: url("../assets/fonts/Inter_700Bold.ttf") format("truetype"); font-weight: 700; font-style: normal; }
+@font-face { font-family: "Inter"; src: url("../assets/fonts/Inter_800ExtraBold.ttf") format("truetype"); font-weight: 800; font-style: normal; }
+
+:root {
+  /* ---- brand (PLACEHOLDER) ---------------------------------------------------------------- */
+  --brand: #5b5bd6;          /* PLACEHOLDER logo, fills, brand moments. 5.4:1 on white */
+  --brand-ink: #4343b8;      /* PLACEHOLDER highlighted words on light. 7.7:1 on white */
+  --brand-on-dark: #8f8ff5;  /* PLACEHOLDER highlighted words on the dark stage. >= 6:1 on #0b0b0b */
+  --accent: #7c7cf0;         /* PLACEHOLDER UI accent: live dots, progress. Never text on light (3.5:1) */
+  --accent-soft: #e6e6fb;    /* PLACEHOLDER marker sweep, selected option background */
+  --accent-ink: #26266e;     /* PLACEHOLDER text on --accent-soft. 10.8:1 */
+  --stage-tint: #5b5bd6;     /* PLACEHOLDER colour of the soft gradient rising from the stage floor */
+
+  /* ---- ink and neutrals (PLACEHOLDER: take them from the app) --------------------------- */
+  --ink: #131417;            /* headlines, app text, solid buttons. 18:1 on white */
+  --body: #3f454d;           /* sub lines. 9.7:1 */
+  --subtle: #6b7280;         /* small labels. 4.8:1 */
+  --faint: #9aa1a9;          /* decoration only (2.6:1): never text that must be read */
+  --label-ink: #4b5563;      /* the "Example" label on the light stage: 7.6:1 on white, >= 4.5:1 on the tinted floor */
+  --border: #e8eaed;         /* app card hairline */
+  --surface: #ffffff;
+  --surface-muted: #f6f7f8;
+  --success-bg: #e5f8dd;
+  --success-ink: #1f5c2c;
+
+  /* ---- the dark stage (optional dark act, T.dark in src/timeline.js) --------------------- */
+  --stage-dark: #0b0b0b;
+  --on-dark: #ffffff;
+  --on-dark-muted: #b8bdc4;  /* 10.4:1 on #0b0b0b */
+
+  /* ---- shape and type ------------------------------------------------------------------- */
+  --radius: 10px;            /* PLACEHOLDER app UI radius. Only real circles (avatars, dots) are round */
+  --font: "Inter", ui-sans-serif, system-ui, sans-serif;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html, body { overflow: hidden; background: var(--surface); }
+body { font-family: var(--font); color: var(--ink); -webkit-font-smoothing: antialiased; text-rendering: geometricPrecision; }
+
+#root { position: relative; overflow: hidden; font-family: var(--font); }
+.layer { position: absolute; left: 0; top: 0; }
+.abs { position: absolute; }
+
+/* small uppercase label (eyebrow) */
+.label {
+  font-size: 15px; font-weight: 600; letter-spacing: 0.24em; text-transform: uppercase; color: var(--subtle);
+  display: inline-flex; align-items: center; gap: 10px; white-space: nowrap;
+}
+.label .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--brand); display: inline-block; }
+.tabular { font-variant-numeric: tabular-nums; }
+
+/* word wrappers used by Film.type. No will-change anywhere: it makes rasterisation depend on the
+   seek order, so the same t could render differently in a still and in a capture. */
+.w { display: inline-block; white-space: pre; }
+.wmask { display: inline-block; overflow: hidden; vertical-align: top; padding: 0.06em 0 0.14em; margin: -0.06em 0 -0.14em; }

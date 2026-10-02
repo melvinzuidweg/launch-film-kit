@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96" role="img" aria-label="Placeholder logo">
+  <!-- PLACEHOLDER logo for the template: a tile in the brand colour (currentColor) with three
+       list bars. Replace this file with your product's mark, then run:
+       node tools/logo_from_svg.mjs assets/logo/logo.svg -->
+  <rect x="0" y="0" width="96" height="96" rx="24" fill="currentColor"/>
+  <rect x="24" y="27" width="48" height="10" rx="5" fill="#ffffff"/>
+  <rect x="24" y="43" width="36" height="10" rx="5" fill="#ffffff"/>
+  <rect x="24" y="59" width="22" height="10" rx="5" fill="#ffffff"/>
+</svg>

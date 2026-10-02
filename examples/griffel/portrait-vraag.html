@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1080, height=1350" />
+    <title>Griffel launch film 45 vraag</title>
+    <link rel="stylesheet" href="src/tokens.css" />
+    <script>window.FORMAT = "45"; window.VARIANT = "vraag";</script>
+    <script src="node_modules/gsap/dist/gsap.min.js"></script>
+    <script src="src/engine.js"></script>
+    <script src="src/timeline.js"></script>
+    <script>
+      // variant "vraag" (per-variant T.O override): the hook already says "Iets onduidelijk? /
+      // Griffel vraagt het eerst aan jou." over the same Q1 screen and the same tap, so the ch2 subs
+      // (overlay-text.js) are skipped: "Doorvragen." stands alone and the drop's caption callback is
+      // the new information. A sub with an infinite rise time never shows (Film.type.render).
+      window.T.O.ch2 = Object.assign({}, window.T.O.ch2, { sub: [Infinity, Infinity] });
+    </script>
+    <script src="src/copy.js"></script>
+    <script src="src/mark.js"></script>
+    <script src="src/film.js"></script>
+    <style>html, body { width: 1080px; height: 1350px; }</style>
+  </head>
+  <body>
+    <div id="root" data-composition-id="main" data-start="0" data-width="1080" data-height="1350"></div>
+    <!-- The root's data-duration is the OUTPUT length, T.OUT_DURATION (T.DURATION x T.SCALE,
+         src/timeline.js), set from script here and again by Film.boot(). Keep it OFF the static
+         markup: HyperFrames' render planner uses a static data-duration as-is and only asks the
+         page (window.__hf.duration) when there is none. -->
+    <script>document.getElementById("root").setAttribute("data-duration", String(window.T.OUT_DURATION));</script>
+    <script src="src/parts/stage.js"></script>
+    <script src="src/parts/phone.js"></script>
+    <script src="src/parts/act-a.js"></script>
+    <script src="src/parts/act-b.js"></script>
+    <script src="src/parts/act-c.js"></script>
+    <script src="src/parts/act-d.js"></script>
+    <script src="src/parts/act-e.js"></script>
+    <script src="src/parts/pushes.js"></script>
+    <script src="src/parts/overlay-text.js"></script>
+    <script src="src/parts/touch.js"></script>
+    <script>window.Film.boot();</script>
+  </body>
+</html>

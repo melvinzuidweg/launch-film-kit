@@ -1,0 +1,240 @@
+[
+ {
+  "owner": "foundation",
+  "severity": 1,
+  "t": "21.45-27.6",
+  "format": "both",
+  "problem": "The thesis 'Griffel raadt niet. / Griffel vraagt.' is fully readable together for only about 1.1 s (23.1-24.2), and line A starts 300 ms after the drop. That leaves the text column empty on the most important frame (21.45-22.3). Right after it, the context card runs 3.1 s at headline size. It reads as a second lesson between thesis and payoff, and it undercuts 'Griffel vraagt'. (Critic 1 notes 3, 11, 12; critic 2 note 5.)"
+ },
+ {
+  "owner": "foundation",
+  "severity": 1,
+  "t": "28.0-37.6",
+  "format": "both",
+  "problem": "'Notulen.' (about 130 px) holds from 28.0 to 33.8 and takes the attention. Meanwhile the payoff row 'Lisa stuurt de offerte naar de klant · 12 december' is about 5 px at feed width. The headline also forces the zoomed e-mail into the right half (hard seam at x≈1005). The fully highlighted state gets only about 1.1 s before the fan-out, and the sub that names the inbox appears long before any inbox is shown. (Critic 1 note 1, critic 3 note 1.)"
+ },
+ {
+  "owner": "foundation",
+  "severity": 1,
+  "t": "38.0-48.0",
+  "format": "both",
+  "problem": "The end card is held too briefly to work as a poster. The CTA is on screen for about 2.75 s and the complete poster for about 2.1-2.4 s, below the ≥3 s target. From 38.0 to 44.0 the film adds about 8 s of no new information (recap words over a reprise recording, then a logo build on an empty stage), which is where muted feed viewers drop off. (Critic 1 notes 4 and 9.)"
+ },
+ {
+  "owner": "foundation",
+  "severity": 1,
+  "t": "9.4-17.1, 33.8-34.5, 37.95-38.1",
+  "format": "both",
+  "problem": "The contract 'return to the rest camera by the end of your window' makes the camera yo-yo. There are 6 zoom reversals in 7 s around act B (9.38-16.33). B→C is a zero-gap out-then-in bounce (B's return ends at 16.32 and C's push starts at 16.33). D goes 1.15→1.01→1.16 at 33.83-34.45. D→E has an L-shaped hitch with zero velocity on the act boundary at 38.0. (Critic 2 notes 4 and 14.)"
+ },
+ {
+  "owner": "foundation",
+  "severity": 2,
+  "t": "9.6-22.0",
+  "format": "both",
+  "problem": "'Doorvragen.' first labels the speaker-naming step (12.0-16.4), then stays unchanged for 9.45 s. When the real doorvragen moment arrives (the question builds from about 17.1), it gets no typographic event, and the core concept is diluted by 'Echte namen in je notulen.' There is also no overlay text from 9.6 to 12.0 (2.4 s). In 4:5 the top 35% of the frame is empty white for that stretch, and the static 'Leg je telefoon op tafel.' sub covers the whole recording. (Critic 1 notes 7, 15, 17; critic 2 note 13; critic 3 creative note 2 and note 18.)"
+ },
+ {
+  "owner": "foundation",
+  "severity": 2,
+  "t": "3.0-3.8 (and 9.8-10.6)",
+  "format": "both",
+  "problem": "The light-to-dark change is a hard-edged black circle growing from behind the phone. Its visible growth takes about 0.25 s, it is the largest frame difference in the film, and the edge moves about 95 px/frame. It reads as a dated slide transition rather than the lights going down, and it will strobe in the 4-subframe final. Because ch1 waits for the dark, the left column is empty from 2.9 to 3.4. (Critic 1 note 18, critic 2 note 7, and the empty-left part of critic 2 note 8.)"
+ },
+ {
+  "owner": "foundation",
+  "severity": 2,
+  "t": "0.0-38.6",
+  "format": "both",
+  "problem": "The VOORBEELD disclosure is about 4-6 px at feed size (19 px in 4:5, 22 px in 16:9, 0.24em tracking), while the fictional content it covers is readable. In 16:9 it samples #56716A on #C5EDD9, which is 4.0:1. The label fades out at 37.9, but the 'Verstuurd' screen still shows the fictional subject 'Projectoverleg nieuwe website' until about 38.4. (Critic 3 notes 3 and 4.)"
+ },
+ {
+  "owner": "foundation",
+  "severity": 2,
+  "t": "21.3-21.5, 27.85-28.15, 33.9-34.3, 37.6-37.8",
+  "format": "both",
+  "problem": "Overlay exits run per word with E.in and an 8 px blur. That leaves dangling fragments ('of offerte toe.', 'toe.' alone, 'kiest.' floating over the phone in 4:5, a smeared 'Verstuurd'), and each exit runs about 0.3 s past its out time. (Critic 2 note 16; overlay part of critic 3 note 7; round-1 orphan-text note.)"
+ },
+ {
+  "owner": "foundation",
+  "severity": 2,
+  "t": "26.05-26.85",
+  "format": "both",
+  "problem": "The recipient taps show two touch dots at once. The next dot appears 0.32 s early while the previous press is still held, which reads as multi-touch or a ghost cursor. (Critic 2 note 10, touch part.)"
+ },
+ {
+  "owner": "foundation",
+  "severity": 2,
+  "t": "whole film (encode); 3.25, 10.75, 11.7, 22.02, 32.35",
+  "format": "both",
+  "problem": "The MP4 shifts brand colours: the mark samples #16B867 instead of #1ABA6D, white samples #FDFFFF, and the near-white gradient bands, with a visible line at y≈351 in 16:9. The final path tags bt709 but converts RGB→YUV without an explicit matrix. The final motion blur averages only 4 subframes, so fast moves will strobe as 4 stepped copies. (Critic 3 encode note, critic 2 note 17.)"
+ },
+ {
+  "owner": "foundation",
+  "severity": 2,
+  "t": "13.0-15.3 (and every later Thomas)",
+  "format": "both",
+  "problem": "The Spreker 1 name field shows the real placeholder 'Bijvoorbeeld: Thomas' (nl.ts meeting.speakers.inputPlaceholder, verified), and Thomas is one of the meeting attendees. A first-time viewer can read it as Griffel suggesting 'Thomas' and the user correcting it to 'Lisa'. That is the name-suggestion feature the storyboard forbids showing. (Critic 1 note 8, critic 3 note 18.)"
+ },
+ {
+  "owner": "foundation",
+  "severity": 2,
+  "t": "16.6-21.95",
+  "format": "both",
+  "problem": "In Inter a capital I looks like a lowercase l, so the core sub line 'Iets onduidelijk?' reads as 'lets onduidelijk?' at feed size. (Critic 1 note 13, critic 3 note 6, overlay part.)"
+ },
+ {
+  "owner": "foundation",
+  "severity": 3,
+  "t": "28.4-34.0",
+  "format": "both",
+  "problem": "The e-mail and inbox strings are not verbatim. The intro 'Projectoverleg nieuwe website · met Lisa, Thomas en Sanne' is invented; the organiser copy in summary-email.tsx reads 'Hieronder vind je wat besproken is, plus de acties en besluiten.' The inbox rows show 'Je meeting-notulen' as the subject, but the real subject is the meeting subject (buildSummaryEmailSubject), and the attendee preheader is 'Meeting-notulen, met jou gedeeld. Ze bestaan alleen in deze e-mail.' (Critic 1 note 16, critic 3 note 17; both verified against griffel-app.)"
+ },
+ {
+  "owner": "foundation",
+  "severity": 3,
+  "t": "11.0-27.0 (global)",
+  "format": "both",
+  "problem": "The 'one continuous take around a phone' never reads as a take. There is no depth or parallax: stage and world move as one flat plane, and the phone shadow does not react to the camera, so the film looks like zoomed screen recordings. (Critic 2 note 12, depth part.)"
+ },
+ {
+  "owner": "act-a",
+  "severity": 2,
+  "t": "0.0-2.5",
+  "format": "both",
+  "problem": "The hook has weak tension. The problem it sets up rests on the whisper 'En wanneer is dat?' at about 34 px #6B7280, which is about 6 px light grey at feed size. In 4:5 it is at full opacity for only about 0.3 s and starts at 2.07:1. Frame 0 is mostly #9AA1A9 grey on white, a weak autoplay thumbnail. In 4:5 the line is centred while the VOORBEELD label is left-aligned. (Critic 1 note 6, the whisper part of critic 3 note 11, critic 3 note 21.)"
+ },
+ {
+  "owner": "act-a",
+  "severity": 2,
+  "t": "2.0-3.0",
+  "format": "both",
+  "problem": "Signature move 1 distorts the type. Words are scaled horizontally, so Inter renders as faux-condensed glyphs for about 0.25 s, then turns into barcode-like clusters. That is off-brand at this level. (Critic 2 note 8, critic 3 note 19.)"
+ },
+ {
+  "owner": "act-a",
+  "severity": 2,
+  "t": "1.2-2.0, 3.4-10.0",
+  "format": "both",
+  "problem": "There are frozen stretches, and the commodity feature gets the time. The hook drift has effectively ended from 1.2 to 2.0 (frame diff below 0.1). The camera is fully still from 7.73 to 9.35 although the spec says the recording hold is never frozen. Recording gets 6 s under a static card while the story setup is under-used. Act A also returns to rest at 9.35-10.0 and act B pushes in again, which is the first reversal of the B yo-yo. (Critic 1 note 17, the act-A part of critic 2 note 11, the act-A part of critic 2 note 4.)"
+ },
+ {
+  "owner": "act-b",
+  "severity": 1,
+  "t": "10.40-10.60, 12.45-12.67, 15.36-15.61",
+  "format": "both",
+  "problem": "Screen changes inside the phone are opacity cross-dissolves, not covers. At 12.5, 'Griffel is aan het werk' and the step list sit on top of 'Spreker 1 / Beluister deze spreker'. At 15.45, the Spreker 2/3 cards, 'Bijvoorbeeld: Thomas', 'Versturen...' and 'Overslaan' ghost through the step list. It looks like a render glitch and breaks the storyboard's 'incoming screen covers the outgoing one'. (Critic 2 note 1, critic 3 note 8.)"
+ },
+ {
+  "owner": "act-b",
+  "severity": 1,
+  "t": "9.8-16.6",
+  "format": "both",
+  "problem": "The camera yo-yos inside and out of act B: OUT 9.38, IN 10.72 (→1.45, 45 px/frame), OUT 11.50 (→1.22, 46 px/frame), IN 12.53 (→1.45), OUT 15.75 (→1.00), then C's IN at 16.33 with a zero gap. It reads as nervous reframing, not one take. (Critic 2 note 4, B part.)"
+ },
+ {
+  "owner": "act-b",
+  "severity": 2,
+  "t": "9.95-10.8",
+  "format": "both",
+  "problem": "The A→B morph reads as one green hairline swinging like a clock hand on an almost black frame. In 4:5 the whole frame is black apart from a tiny phone and the line. It does not read as '36 bars fold into the step list'. The light front has a hard diagonal dark edge, and a ghost vertical line stays over the step list until 10.6. (Critic 2 note 9; the 10.0 signature part of critic 2 note 13.)"
+ },
+ {
+  "owner": "act-b",
+  "severity": 2,
+  "t": "12.6-16.4",
+  "format": "4:5",
+  "problem": "In 4:5 the camera does not push in on the naming card. The clip, the name field and the typed 'Lisa' are illegible at feed size. The name-flip caption ('Spreker 1' → 'Lisa'), one of the four signatures, is about 34 px, roughly 11 px at feed size. (Critic 1 note 20, the name-flip part of critic 3 note 11.)"
+ },
+ {
+  "owner": "act-c",
+  "severity": 1,
+  "t": "20.8-23.8 (drop 22.0)",
+  "format": "both",
+  "problem": "The climax has no visual idea, and the answer that resolves the hook is never readable. On the drop the only event is a +4% zoom squeezed into 2 frames, which reads as a camera bump. '12 december' is about 26 px on 1080p, under 5 px in the feed. The muted viewer never sees the vague line become concrete, which is the film's one message. (Critic 1 note 2, critic 2 note 5, critic 3 creative notes 1 and 3.)"
+ },
+ {
+  "owner": "act-c",
+  "severity": 1,
+  "t": "22.3-22.5, 23.55-23.7, 27.5-27.7",
+  "format": "both",
+  "problem": "The page changes are cross-dissolves. At 23.6 both screens are below 50% for 6-9 frames, so the phone is a washed-out, near-blank slab under 'Griffel raadt niet.'. The Q1→Q2 change at about 22.45 is nearly empty for about 0.1 s. At 27.52 act C fades its review content out under act D's incoming screen, which causes the 27.6 ghosting. (Critic 2 note 1, C part.)"
+ },
+ {
+  "owner": "act-c",
+  "severity": 1,
+  "t": "16.3-27.4",
+  "format": "both",
+  "problem": "The camera is staccato: about 10 chained keys that each start and stop at zero velocity, with measured stops at 17.05, 20.4, 22.1, 23.4 (0.55 s) and 24.72 (0.6 s). It opens with a push from rest (the B→C bounce). The focus push on the context row from 24.4 competes with the thesis line. (Critic 2 note 6, the C part of critic 2 note 4, the act part of critic 1 note 3.)"
+ },
+ {
+  "owner": "act-c",
+  "severity": 2,
+  "t": "26.05-26.85",
+  "format": "both",
+  "problem": "Each tapped 'Eerder gebruikt' row collapses in about 4 frames, so 'Notulen versturen' and everything below jump up three times (frame spikes at 26.18, 26.48 and 26.78), magnified by the 1.5× camera. (Critic 2 note 10, act part.)"
+ },
+ {
+  "owner": "act-c",
+  "severity": 3,
+  "t": "17.0-22.3",
+  "format": "both",
+  "problem": "The in-app question has a mint marker behind 'de Q4-deadline' (#12804B on #D6FBEB, 4.47:1). The real QuestionWizard renders plain text-2xl bold, so this is the one non-verbatim styling in an otherwise exact screen. (Critic 3 note 16.)"
+ },
+ {
+  "owner": "act-d",
+  "severity": 1,
+  "t": "30.1-33.8",
+  "format": "both",
+  "problem": "Creative weakness #1: the payoff of the film cannot be read and does not land. ACTIES row 1 'Lisa stuurt de offerte naar de klant · 12 december' is about 28-30 px on 1080p, roughly 5 px at feed width, and readable for about 1.1 s. Then the fan-out whips from z 2.04 to 1.15 in 0.48 s (about 6000 px/s, 100 px/frame), yanks the row away, and collapses the e-mail into an empty white slab. In 4:5 that slab is about 700×260 px for about 0.3 s. Lisa's action never visibly reaches Lisa's inbox, so the payoff splits into two unrelated pictures. (Critic 1 notes 1 and 5, critic 3 notes 1 and 9, critic 2 note 3, critic 3 creative note 3.)"
+ },
+ {
+  "owner": "act-d",
+  "severity": 1,
+  "t": "28.4-33.0",
+  "format": "both",
+  "problem": "The logo in the e-mail header is altered: it reads 'Grıffel' without the green i-dot. act-d.js:221 builds the lockup from MARK.markInner + MARK.wordmark, and the i-dot path is not in MARK.wordmark. Only act E adds it, as IDOT. (Critic 3; verified in the code.)"
+ },
+ {
+  "owner": "act-d",
+  "severity": 1,
+  "t": "27.5-27.7",
+  "format": "both",
+  "problem": "At the C→D hand-off both screens sit below 50% opacity for 6-9 frames, so the phone is a washed-out, near-blank slab. (Critic 2 note 1, D part.)"
+ },
+ {
+  "owner": "act-d",
+  "severity": 2,
+  "t": "32.6-34.6",
+  "format": "both",
+  "problem": "The 'sent' sequence is out of order and over-signalled. The rows land while the phone still says 'Notulen onderweg' with Verzonden spinning. Then 'Verstuurd' (34.0), the push 'Je notulen zijn verstuurd.' (34.2) and 'Verstuurd is verwijderd.' follow: five 'sent' signals in 3 s. In 4:5 the returning phone cuts through the third inbox row at y≈912 (33.8-34.3). The rows also repeat the wrong subject. (Critic 1 note 5, critic 3 note 7, the act-d part of critic 1 note 16.)"
+ },
+ {
+  "owner": "act-d",
+  "severity": 2,
+  "t": "32.7-38.0",
+  "format": "both",
+  "problem": "The tail of act D is slow and the camera bounces. The camera is still from 32.7 to 33.8 after the rows have landed. It goes 1.15→1.01→1.16 at 33.83-34.45 (back to rest, then a push on the hero). The trust beat is a 70%-empty white 'Verstuurd' phone for about 4 s, with the left column empty from 37.35 to 38.0. The D→E camera path is L-shaped with a hitch at 38.0. (The D parts of critic 2 notes 4 and 11, critic 2 note 14, critic 3 creative note 3, the D part of critic 1 note 9.)"
+ },
+ {
+  "owner": "act-e",
+  "severity": 1,
+  "t": "38.0-44.2",
+  "format": "both",
+  "problem": "The outro is the dirtiest and slowest stretch of the film. The white 'Verstuurd' screen crossfades linearly into the dark recording reprise, so the phone is a muddy grey with 'Verstuurd', '00:00' and 'OPNAME LOOPT' ghosted together (38.2). The reverse fade at 40.65 makes another grey slab. The reprise reads as a new recording starting, freezes from 39.47 to 40.30, and repeats three words already seen before an abstract logo build on an empty stage. (Critic 1 notes 4, 9 and 14, critic 2 note 2, critic 3 note 5, the E parts of critic 2 notes 11 and 14.)"
+ },
+ {
+  "owner": "act-e",
+  "severity": 2,
+  "t": "41.7-42.3 (lock, after retime)",
+  "format": "both",
+  "problem": "The bracket snap runs on the house curve over 0.3 s, so about 85% of the travel is done 150 ms before the lock (the music hit) and the last pixels crawl into it. The brackets then sit dead until the wipe. (Critic 2 note 15.)"
+ },
+ {
+  "owner": "act-e",
+  "severity": 2,
+  "t": "43.0-48.0",
+  "format": "both",
+  "problem": "On the poster frame the slogan reads 'De Al-notulist die doorvraagt.', because Inter's capital I looks like a lowercase l. The fine print 'Gemaakt in Nederland. Verwerkt in de EU.' is #6B7280 on the green gradient at about 4.0-4.2:1, and about 8.7 px at feed size in 4:5. (The E parts of critic 1 note 13 and critic 3 note 6, critic 3 note 20.)"
+ }
+]

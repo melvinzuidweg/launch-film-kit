@@ -1,0 +1,13 @@
+# private working notes the kit was written from (founder and account details): never publish
+_sources/
+
+# installs, wherever someone tries the template or the example
+# (renders are ignored by the template's and the example's own .gitignore, which keep the
+# example's EDL and cue files; do not add a bare `renders/` here, it would override that)
+node_modules/
+.venv/
+*.log
+.hyperframes/
+
+# licensed music is never committed, anywhere in the tree
+**/assets/audio/licensed/

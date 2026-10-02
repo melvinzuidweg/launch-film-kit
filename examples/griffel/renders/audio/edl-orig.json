@@ -1,0 +1,24 @@
+{
+ "music": "assets/audio/licensed/hartzmann-just-flow.wav",
+ "duration": 52.363636,
+ "segments": [
+  {
+   "out_t": 0.0,
+   "song_t": 81.0
+  },
+  {
+   "out_t": 39.272727,
+   "song_t": 137.727273
+  }
+ ],
+ "lowpass": [
+  [
+   0.0,
+   24.0
+  ]
+ ],
+ "lp_ramp": 0.4,
+ "music_gain": 0.8,
+ "sfx_gain": 0.5,
+ "target_lufs": -14.0
+}

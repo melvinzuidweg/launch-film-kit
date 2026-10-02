@@ -1,0 +1,22 @@
+{
+  "name": "launch-film",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Deterministic, code-rendered launch film: seek(t) pages, Chrome frame capture, ffmpeg encode",
+  "type": "module",
+  "scripts": {
+    "doctor": "node tools/doctor.mjs",
+    "stills": "node tools/still.mjs --page index.html --from 0 --step 1 --sheet --out renders/stills/169",
+    "stills:45": "node tools/still.mjs --page portrait.html --from 0 --step 1 --sheet --out renders/stills/45",
+    "draft": "node tools/render.mjs 169 draft",
+    "draft:45": "node tools/render.mjs 45 draft",
+    "final": "node tools/render.mjs 169 final",
+    "final:45": "node tools/render.mjs 45 final",
+    "cues": "node tools/audio/events.mjs --out renders/audio/cues.json",
+    "logo": "node tools/logo_from_svg.mjs assets/logo/logo.svg"
+  },
+  "dependencies": {
+    "gsap": "3.15.0",
+    "puppeteer-core": "25.12.0"
+  }
+}

@@ -1,0 +1,71 @@
+/* Griffel launch film: design tokens.
+ * Sources: griffel-website/src/app/globals.css, griffel-app/apps/mobile/src/theme/tokens.ts,
+ * griffel-app/docs/branding/logo/README.md. Inter only, 10px radius in the app UI.
+ * Contrast rule: brand green #1ABA6D is NOT text on light (2.5:1). Use --green-ink #12804B
+ * (5.0:1) or the gradient for highlighted words on light. #09FE94 never as text on light.
+ */
+@font-face { font-family: "Inter"; src: url("../assets/fonts/Inter_400Regular.ttf") format("truetype"); font-weight: 400; font-style: normal; }
+@font-face { font-family: "Inter"; src: url("../assets/fonts/Inter_500Medium.ttf") format("truetype"); font-weight: 500; font-style: normal; }
+@font-face { font-family: "Inter"; src: url("../assets/fonts/Inter_600SemiBold.ttf") format("truetype"); font-weight: 600; font-style: normal; }
+@font-face { font-family: "Inter"; src: url("../assets/fonts/Inter_700Bold.ttf") format("truetype"); font-weight: 700; font-style: normal; }
+@font-face { font-family: "Inter"; src: url("../assets/fonts/Inter_800ExtraBold.ttf") format("truetype"); font-weight: 800; font-style: normal; }
+
+:root {
+  /* brand */
+  --brand: #1aba6d;          /* logo mark, brand moments; text only on dark */
+  --green-ink: #12804b;      /* highlighted words on light (5.0:1) */
+  --green-bright: #2fd685;
+  --mint: #09fe94;           /* UI accent: waveform, live dots. Small doses, never text on light */
+  --mint-soft: #d6fbeb;      /* selected option, badges */
+  --mint-soft-2: #bdf5dc;
+  --mint-ink: #00301b;       /* text on mint-soft */
+
+  /* ink + neutrals (app tokens) */
+  --ink: #131417;            /* app text, solid buttons */
+  --ink-logo: #121316;       /* wordmark ink */
+  --body: #3f454d;
+  --subtle: #6b7280;         /* 4.8:1 on white */
+  --faint: #9aa1a9;
+  --border: #e8eaed;
+  --border-strong: #d6dadd;
+  --surface: #ffffff;
+  --surface-muted: #f6f7f8;
+
+  /* recording screen (always dark) */
+  --rec-bg: #0b0b0b;
+  --rec-surface: #161616;
+  --rec-border: #262626;
+  --rec-fg: #ffffff;
+  --rec-muted: #9c9c9c;
+  --rec-stop: #ff4d2e;
+
+  /* status */
+  --danger: #e03a0e;
+  --success-bg: #e5f8dd;
+  --success-ink: #1f5c2c;
+
+  --radius: 10px;
+  --font: "Inter", ui-sans-serif, system-ui, sans-serif;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html, body { overflow: hidden; background: var(--surface); }
+body { font-family: var(--font); color: var(--ink); -webkit-font-smoothing: antialiased; text-rendering: geometricPrecision; font-feature-settings: "ss01" 0; }
+
+#root { position: relative; overflow: hidden; font-family: var(--font); }
+.layer { position: absolute; left: 0; top: 0; }
+.abs { position: absolute; }
+
+/* section label (website eyebrow / app section label) */
+.label {
+  font-size: 15px; font-weight: 600; letter-spacing: 0.24em; text-transform: uppercase; color: var(--subtle);
+  display: inline-flex; align-items: center; gap: 10px; white-space: nowrap;
+}
+.label .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--brand); display: inline-block; }
+
+.hl-green { background: linear-gradient(180deg, #1aba6d, #12804b); -webkit-background-clip: text; background-clip: text; color: transparent; }
+.tabular { font-variant-numeric: tabular-nums; }
+
+/* word wrappers used by Film.type */
+.w { display: inline-block; white-space: pre; } /* no will-change: keeps seek-order-independent rasterisation */
+.wmask { display: inline-block; overflow: hidden; vertical-align: top; padding: 0.06em 0 0.14em; margin: -0.06em 0 -0.14em; }

@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1080, height=1350" />
+    <title>Launch film 4:5</title>
+    <link rel="stylesheet" href="src/tokens.css" />
+    <!-- 4:5, 1080x1350. index.html is the same film in 16:9. -->
+    <script>window.FORMAT = "45";</script>
+    <!-- Load order: (gsap) -> engine -> timeline -> copy -> logo -> film -> parts -> boot.
+         GSAP is optional: it only bridges to HyperFrames (see Film.boot in src/film.js). -->
+    <script src="node_modules/gsap/dist/gsap.min.js"></script>
+    <script src="src/engine.js"></script>
+    <script src="src/timeline.js"></script>
+    <script src="src/copy.js"></script>
+    <script src="src/logo.js"></script>
+    <script src="src/film.js"></script>
+    <style>html, body { width: 1080px; height: 1350px; }</style>
+  </head>
+  <body>
+    <!-- No static data-duration on the root: Film.boot() writes T.OUT_DURATION into it. -->
+    <div id="root" data-composition-id="main" data-start="0" data-width="1080" data-height="1350"></div>
+    <script src="src/parts/stage.js"></script>
+    <script src="src/parts/phone.js"></script>
+    <script src="src/parts/act-example.js"></script>
+    <script src="src/parts/pushes.js"></script>
+    <script src="src/parts/overlay-text.js"></script>
+    <script src="src/parts/touch.js"></script>
+    <script>window.Film.boot();</script>
+  </body>
+</html>

@@ -1,0 +1,15 @@
+{
+ "music": "renders/audio/test-track.wav",
+ "duration": 12.0,
+ "segments": [
+  { "out_t": 0.0, "song_t": 12.0 },
+  { "out_t": 6.0, "song_t": 30.0 }
+ ],
+ "lowpass": [[0.0, 4.0]],
+ "lp_ramp": 0.4,
+ "fade_out": 0.0,
+ "music_gain": 0.8,
+ "sfx_gain": 0.5,
+ "target_lufs": -14.0,
+ "target_tp": -1.5
+}

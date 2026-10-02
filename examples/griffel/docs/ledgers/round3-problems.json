@@ -1,0 +1,415 @@
+[
+ {
+  "owner": "foundation",
+  "severity": 1,
+  "t": "3.5-6.0",
+  "format": "both",
+  "problem": "The brand name and the doorvragen promise are first legible at 19.45 s (critic 1, creative weakness #1). Muted viewers who leave in the first 5-10 s see only a recorder and a naming step, the same claim every competitor makes."
+ },
+ {
+  "owner": "foundation",
+  "severity": 2,
+  "t": "0.0-2.0",
+  "format": "both",
+  "problem": "The hook has low scroll-stop power. The only motion in 0.0-1.0 is the karaoke colour change, so the first real visual event (the marker sweep) comes at 1.0, and the whisper is fully readable only from about 1.2 to 2.35."
+ },
+ {
+  "owner": "foundation",
+  "severity": 2,
+  "t": "2.45-4.0",
+  "format": "both",
+  "problem": "All three critics: the light-to-dark change is soft-edged now but completes in about 0.25-0.4 s. It is the largest frame difference in the film (19.8-21.3 against 14.6 for the next largest), and the shrinking bright halo reads as an iris or flash, not lights going down."
+ },
+ {
+  "owner": "foundation",
+  "severity": 2,
+  "t": "3.0-10.6",
+  "format": "4:5",
+  "problem": "Through the 6.5 s dark act the 4:5 phone sits at z 0.86-0.91, about 30% of the frame width, in a black frame. At feed size only the timer survives, and the A->B morph frame at 9.95-10.3 is nearly black with a tiny phone."
+ },
+ {
+  "owner": "foundation",
+  "severity": 2,
+  "t": "22.0-25.5",
+  "format": "both",
+  "problem": "Critics 1 and 3: the film's one visual idea, the caption resolving to '12 december', plays in the same 0.6 s as the 96 px thesis rise. The eye goes to the headline and misses the picture."
+ },
+ {
+  "owner": "foundation",
+  "severity": 2,
+  "t": "32.8-37.7",
+  "format": "both",
+  "problem": "Critic 1: the F4 line 'Besluiten en actiepunten / in de inbox van wie jij kiest.' is a 40-44 px sub that is fully readable for only about 0.6 s. Meanwhile 36.3-37.6 is a static tail with nothing new on screen."
+ },
+ {
+  "owner": "foundation",
+  "severity": 2,
+  "t": "36.4-40.0",
+  "format": "16:9",
+  "problem": "With DE['169'] at cx -122, the phone's left bezel lands at about x 877, inside the 950 px text column. That forces act D's two-key split, which causes the 37.72-37.98 hitch (critic 2, sev1). In the outro, 'Doorvragen.' ends 74 px from the bezel and the right 40% of the frame is empty (critic 3)."
+ },
+ {
+  "owner": "foundation",
+  "severity": 2,
+  "t": "38.0-48.0",
+  "format": "both",
+  "problem": "All critics: the back fifth carries no new information for about 5-7 s. A blank white phone with a waveform sits under the recap, then the logo builds for 2.8 s with no copy, so the poster is complete only at about 44.2."
+ },
+ {
+  "owner": "foundation",
+  "severity": 2,
+  "t": "whole film (encode)",
+  "format": "both",
+  "problem": "Critics 2 and 3: the draft MP4 shifts the brand colours. The mark decodes as #16B867 (target #1ABA6D), the wordmark as #0F1013 (target #121316) and white as #FDFFFF. The near-white stage gradient bands (an R step of 246 to 242 at y about 464 in 16:9, and at y 432 in 4:5 frame 0). Four-subframe blur will step fast moves into visible copies."
+ },
+ {
+  "owner": "act-a",
+  "severity": 2,
+  "t": "0.0-2.5",
+  "format": "both",
+  "problem": "The hook is a type card with no speaker framing, so it does not read as 'someone in a meeting said this'. In 4:5 the whisper 'En wanneer is dat?' sits ABOVE the line it questions, so the question is read first (all three critics; 16:9 puts it below)."
+ },
+ {
+  "owner": "act-a",
+  "severity": 2,
+  "t": "2.05-2.75",
+  "format": "both",
+  "problem": "In signature move 1, word-wide solid ink slabs (one green) grow over words that are still readable. For about 0.3 s it reads as a redacted document, the opposite of clarity. Barcode-like clusters then fly beside the phone (all three critics)."
+ },
+ {
+  "owner": "act-b",
+  "severity": 2,
+  "t": "9.95-10.65",
+  "format": "both",
+  "problem": "The A->B morph still reads as a near-black frame with a green curve (worst in 4:5). Sagging bar fragments hang over the Uploaden/Transcriberen rows until about 10.6. In 16:9 the top-left stage stays black until about 10.6 while the phone is already white, and the bars-to-steps idea reads as a falling chain."
+ },
+ {
+  "owner": "act-b",
+  "severity": 3,
+  "t": "13.0-16.3",
+  "format": "16:9",
+  "problem": "The 16:9 name-flip caption ('Spreker 1 -> Lisa / Die pakken we wel op.') is a small two-line block, about 7-8 px at 400 px width, so the signature is weaker in 16:9 than in 4:5."
+ },
+ {
+  "owner": "act-c",
+  "severity": 2,
+  "t": "21.0-22.9",
+  "format": "both",
+  "problem": "The vague-to-concrete swap ('de Q4-deadline' struck, '12 december' flies in) runs at the smallest type on screen: about 36 px, or about 12 px at feed width in 4:5 and about 7 px in 16:9. It also plays under the rising 96 px thesis (critics 1 and 3)."
+ },
+ {
+  "owner": "act-c",
+  "severity": 2,
+  "t": "25.35-27.95",
+  "format": "both",
+  "problem": "The act C tail camera bumps. It pushes in on the context row, pulls back 0.55 s later (the 25.9 key in 16:9, the 25.6 z 1.12 key in 4:5), then starts the rest pull-out at 26.55/26.6. The 'Notulen versturen' tap at 27.2 lands at the fastest point of the move (21 px/f), and in 4:5 the recipient chips (the 'wie jij kiest' choice) are illegible."
+ },
+ {
+  "owner": "act-c",
+  "severity": 3,
+  "t": "22.25-22.8",
+  "format": "both",
+  "problem": "The flying '12 december' chip crosses in-app text (the Q2 hint and header), the island and the status bar. The caption meanwhile reads '…dan houden we      aan.' and, on landing, 'we12 decemberaan.' with no spaces until about 22.8."
+ },
+ {
+  "owner": "act-c",
+  "severity": 3,
+  "t": "22.0-22.6",
+  "format": "both",
+  "problem": "The drop punch is +8% (16:9 z 2.2 to 2.37 in 0.16 s) and then pulls back to 2.25, which reads as a camera bump competing with the chip flight. The storyboard specifies +4%."
+ },
+ {
+  "owner": "act-d",
+  "severity": 1,
+  "t": "36.4-38.0",
+  "format": "both",
+  "problem": "The D->E hand-off hitches (critic 2, sev1). The trust whip lands at 37.72, then a second key slides the phone 74 px left (12.7 px/f) and stops dead at 38.0, a nudge right on the act boundary. Before that, the whip peaks at 50.6 px/f while 'Verstuurd is verwijderd.' is still being read."
+ },
+ {
+  "owner": "act-d",
+  "severity": 2,
+  "t": "32.6-35.3",
+  "format": "both",
+  "problem": "The inbox half of the payoff barely registers (all three critics). Lisa's row shows her action only from about 32.9 to 33.35, then crossfades to the generic subject. The rows are about 430 px wide in 4:5 (text about 3-4 px at feed) and about 230 px in 16:9. The hero text overhangs the row card over the 'L' avatar. The e-mail body ghosts under row D. In 16:9 the rows overlap the incoming phone's bezel. The rows vanish while the F4 sub is still up."
+ },
+ {
+  "owner": "act-d",
+  "severity": 2,
+  "t": "31.9-37.0",
+  "format": "both",
+  "problem": "The act D camera yo-yos. It goes out to z 0.95 for the fan-out, stops (0.27 s in 16:9, 0.68 s in 4:5), pushes in at 34 px/f onto a mostly blank 'Verstuurd' phone, and holds there almost static. The trust chips are small, and 16:9 has a fully frozen 0.62 s at 31.97-32.6."
+ },
+ {
+  "owner": "act-d",
+  "severity": 3,
+  "t": "28.45-28.55",
+  "format": "both",
+  "problem": "The e-mail unfold starts with a 3-4 frame fade-through-white phone."
+ },
+ {
+  "owner": "act-e",
+  "severity": 2,
+  "t": "38.0-42.0",
+  "format": "both",
+  "problem": "Act E opens on a blank white phone with a #09FE94 waveform on white (about 1.35:1, a light-mode state the app never shows), under recap words the viewer has already read. It reads as a new recording starting, and 39.2-39.7 is near-still (all three critics)."
+ },
+ {
+  "owner": "act-e",
+  "severity": 3,
+  "t": "41.45-42.25",
+  "format": "both",
+  "problem": "The brackets sit dead still from 41.45 to 41.83 (the FLY-to-SNAP gap), snap in 0.13 s and land 2 frames before the 42.0 lock, then sit still again until the wordmark slide at 42.25. The 4% settle is not visible."
+ },
+ {
+  "owner": "act-e",
+  "severity": 3,
+  "t": "43.4-48.0",
+  "format": "4:5",
+  "problem": "On the 4:5 poster the install offer is the weakest line: 'Gratis: 3 meetings per maand.' is grey regular at about 36 px (about 12 px at feed). The poster group uses only the middle half of the frame."
+ },
+ {
+  "owner": "?",
+  "severity": 2,
+  "t": "",
+  "format": "",
+  "problem": "(open from round 2) foundation sev1 38.0-48.0: end card held too briefly, and about 8 s of no new information from 38 to 44"
+ },
+ {
+  "owner": "?",
+  "severity": 2,
+  "t": "",
+  "format": "",
+  "problem": "(open from round 2) foundation sev2 3.0-3.8: hard-edged black circle for light-to-dark, empty left column"
+ },
+ {
+  "owner": "?",
+  "severity": 2,
+  "t": "",
+  "format": "",
+  "problem": "(open from round 2) act-a sev2: weak hook tension; whisper about 6 px grey, at full opacity about 0.3 s; frame 0 weak; 4:5 alignment mismatch"
+ },
+ {
+  "owner": "?",
+  "severity": 2,
+  "t": "",
+  "format": "",
+  "problem": "(open from round 2) act-a sev2: signature 1 faux-condensed glyphs that turn into barcode clusters"
+ },
+ {
+  "owner": "?",
+  "severity": 2,
+  "t": "",
+  "format": "",
+  "problem": "(open from round 2) act-a sev2: frozen stretches; the commodity recording gets 6 s"
+ },
+ {
+  "owner": "?",
+  "severity": 2,
+  "t": "",
+  "format": "",
+  "problem": "(open from round 2) act-b sev2: A→B morph reads as one green hairline on a black frame"
+ },
+ {
+  "owner": "?",
+  "severity": 2,
+  "t": "",
+  "format": "",
+  "problem": "(open from round 2) act-b sev2 (4:5): no push-in on the naming card; name field and flip caption illegible"
+ },
+ {
+  "owner": "?",
+  "severity": 2,
+  "t": "",
+  "format": "",
+  "problem": "(open from round 2) act-d sev1: payoff unreadable; the whip-out collapses the e-mail and Lisa's action never reaches Lisa's inbox"
+ },
+ {
+  "owner": "?",
+  "severity": 2,
+  "t": "",
+  "format": "",
+  "problem": "(open from round 2) act-d sev2: slow tail and a 70%-empty Verstuurd phone for about 4 s"
+ },
+ {
+  "owner": "?",
+  "severity": 2,
+  "t": "",
+  "format": "",
+  "problem": "(open from round 2) act-e sev1: muddy outro, reprise ghosting, freeze, abstract logo build"
+ },
+ {
+  "owner": "?",
+  "severity": 2,
+  "t": "",
+  "format": "",
+  "problem": "(open from round 2) foundation 28.0-37.6: 'Notulen.' hogs attention, payoff row ~5 px, ~1.1 s highlighted, fan-out whip"
+ },
+ {
+  "owner": "?",
+  "severity": 2,
+  "t": "",
+  "format": "",
+  "problem": "(open from round 2) foundation 38.0-48.0: end card held too briefly; ~8 s with no new info"
+ },
+ {
+  "owner": "?",
+  "severity": 2,
+  "t": "",
+  "format": "",
+  "problem": "(open from round 2) foundation camera yo-yo (contract) incl. D->E L-shaped hitch at 38.0"
+ },
+ {
+  "owner": "?",
+  "severity": 2,
+  "t": "",
+  "format": "",
+  "problem": "(open from round 2) foundation 3.0-3.8: hard black circle light->dark, largest frame diff, strobes"
+ },
+ {
+  "owner": "?",
+  "severity": 2,
+  "t": "",
+  "format": "",
+  "problem": "(open from round 2) foundation encode: brand green shift, #FDFFFF white, gradient banding, 4-subframe blur"
+ },
+ {
+  "owner": "?",
+  "severity": 2,
+  "t": "",
+  "format": "",
+  "problem": "(open from round 2) foundation global: no depth/parallax, phone shadow does not react, reads as zoomed screen recordings"
+ },
+ {
+  "owner": "?",
+  "severity": 2,
+  "t": "",
+  "format": "",
+  "problem": "(open from round 2) act-a 1.2-2.0 / 3.4-10.0: frozen stretches, camera still 7.73-9.35, A returns to rest then B pushes"
+ },
+ {
+  "owner": "?",
+  "severity": 2,
+  "t": "",
+  "format": "",
+  "problem": "(open from round 2) act-a 2.0-3.0: signature move 1 faux-condensed Inter / barcode clusters"
+ },
+ {
+  "owner": "?",
+  "severity": 2,
+  "t": "",
+  "format": "",
+  "problem": "(open from round 2) act-b 9.95-10.8: A->B morph reads as one green hairline; ghost line over step list"
+ },
+ {
+  "owner": "?",
+  "severity": 2,
+  "t": "",
+  "format": "",
+  "problem": "(open from round 2) act-c 20.8-23.8: climax has no visual idea; +4% zoom reads as camera bump"
+ },
+ {
+  "owner": "?",
+  "severity": 2,
+  "t": "",
+  "format": "",
+  "problem": "(open from round 2) act-c 16.3-27.4: staccato camera, zero-velocity stops"
+ },
+ {
+  "owner": "?",
+  "severity": 2,
+  "t": "",
+  "format": "",
+  "problem": "(open from round 2) act-d 30.1-33.8: payoff unreadable, whip fan-out 100 px/frame, white slab"
+ },
+ {
+  "owner": "?",
+  "severity": 2,
+  "t": "",
+  "format": "",
+  "problem": "(open from round 2) act-d 32.6-34.6: sent sequence out of order; 4:5 phone cuts through row 3"
+ },
+ {
+  "owner": "?",
+  "severity": 2,
+  "t": "",
+  "format": "",
+  "problem": "(open from round 2) act-d 32.7-38.0: slow tail, camera bounce, empty Verstuurd phone, D->E hitch"
+ },
+ {
+  "owner": "?",
+  "severity": 2,
+  "t": "",
+  "format": "",
+  "problem": "(open from round 2) act-e 41.7-42.3: bracket snap crawls into lock, then dead"
+ },
+ {
+  "owner": "?",
+  "severity": 2,
+  "t": "",
+  "format": "",
+  "problem": "(open from round 2) 38-48 end card held too briefly; 38-44 brings no new information"
+ },
+ {
+  "owner": "?",
+  "severity": 2,
+  "t": "",
+  "format": "",
+  "problem": "(open from round 2) MP4 shifts brand colours, white #FDFFFF, gradient banding"
+ },
+ {
+  "owner": "?",
+  "severity": 2,
+  "t": "",
+  "format": "",
+  "problem": "(open from round 2) Hook weak tension: whisper tiny grey; frame 0 grey; 4:5 centred vs left label"
+ },
+ {
+  "owner": "?",
+  "severity": 2,
+  "t": "",
+  "format": "",
+  "problem": "(open from round 2) Signature move 1 faux-condensed Inter / barcode clusters"
+ },
+ {
+  "owner": "?",
+  "severity": 2,
+  "t": "",
+  "format": "",
+  "problem": "(open from round 2) A→B morph: green hairline on near-black frame in 4:5, ghost line over the step list"
+ },
+ {
+  "owner": "?",
+  "severity": 2,
+  "t": "",
+  "format": "",
+  "problem": "(open from round 2) 4:5 no push-in on naming card; name-flip caption ~11 px at feed"
+ },
+ {
+  "owner": "?",
+  "severity": 2,
+  "t": "",
+  "format": "",
+  "problem": "(open from round 2) Climax has no visual idea; '12 december' unreadable"
+ },
+ {
+  "owner": "?",
+  "severity": 2,
+  "t": "",
+  "format": "",
+  "problem": "(open from round 2) Payoff row unreadable; fan-out collapses e-mail; action never reaches Lisa's inbox"
+ },
+ {
+  "owner": "?",
+  "severity": 2,
+  "t": "",
+  "format": "",
+  "problem": "(open from round 2) Tail of act D slow; trust beat is a 70%-empty white 'Verstuurd' phone"
+ },
+ {
+  "owner": "?",
+  "severity": 2,
+  "t": "",
+  "format": "",
+  "problem": "(open from round 2) Outro muddy crossfade and reprise"
+ }
+]

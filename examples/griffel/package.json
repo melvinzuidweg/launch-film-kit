@@ -1,0 +1,16 @@
+{
+  "name": "griffel-launch-video",
+  "private": true,
+  "version": "0.0.0",
+  "description": "Code-rendered launch film for Griffel (HyperFrames + GSAP)",
+  "type": "module",
+  "scripts": {
+    "doctor": "hyperframes doctor",
+    "preview": "hyperframes preview",
+    "lint": "hyperframes lint"
+  },
+  "devDependencies": {
+    "gsap": "3.15.0",
+    "hyperframes": "0.8.68"
+  }
+}

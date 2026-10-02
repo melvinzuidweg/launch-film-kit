@@ -1,0 +1,13 @@
+node_modules/
+frames/
+.venv/
+*.log
+.hyperframes/
+# licensed music is never committed (see README.md); put your own WAVs here
+assets/audio/licensed/
+# renders are outputs; only the music edit (EDL) and the cue lists are kept
+renders/*
+!renders/audio/
+renders/audio/*
+!renders/audio/edl-*.json
+!renders/audio/cues-*.json

@@ -1,0 +1,28 @@
+{
+ "music": "assets/audio/licensed/hartzmann-one-more-chance.wav",
+ "duration": 52.363636,
+ "segments": [
+  {
+   "out_t": 0.0,
+   "song_t": 109.06
+  },
+  {
+   "out_t": 4.363636,
+   "song_t": 89.423636
+  },
+  {
+   "out_t": 45.818182,
+   "song_t": 189.787273
+  }
+ ],
+ "lowpass": [
+  [
+   4.363636,
+   24.02
+  ]
+ ],
+ "lp_ramp": 0.4,
+ "music_gain": 0.8,
+ "sfx_gain": 0.5,
+ "target_lufs": -14.0
+}
