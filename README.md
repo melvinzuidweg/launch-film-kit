@@ -48,7 +48,7 @@ media/                            previews and posters of the Griffel film
 Clone the repository, then copy the skill folder into your Claude Code skills directory:
 
 ```bash
-git clone <repo-url> launch-film-kit
+git clone https://github.com/melvinzuidweg/launch-film-kit.git launch-film-kit
 mkdir -p ~/.claude/skills
 cp -r launch-film-kit/launch-film ~/.claude/skills/launch-film
 ```
