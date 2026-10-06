@@ -279,6 +279,7 @@ If the budget is tighter, cut rounds before you cut truth. The case's facts work
 - **A web or SaaS product rather than a phone app.** The template's device is a CSS phone with a 393×852 logical screen. A browser-frame part with the same contract (a logical screen, a screen-to-world mapping, a status/chrome layer) should work. The case did not test it, so build it in the foundation and seek-order-test it before the act lanes start.
 - **No music licence yet.** Build and review with synthesised SFX and the template's `make_test_track.py`, a 120 BPM test track that matches `edl.example.json`. Never ship the test track.
 - **The human wants to review often.** Gate at brief + facts, storyboard, key stills (frame 0, the core moment, the end card), picture lock and the final. Present stills, not drafts; they are faster to judge.
+- **HyperFrames' own skills are installed as well.** Its `product-launch-video` and `hyperframes-studio` skills plan launch films too, with some opposite rules (they build from real captures of the product, a screen recording or the site's own screenshots; this skill rebuilds the UI from source). Agree with the human which one leads; if this skill leads, use theirs only for renderer-specific advice ([05 §8](references/05-render-and-encode.md#8-hyperframes-as-an-option)).
 - **The human cannot answer code-level questions.** The claim checks still run, because agents read the product repo. Ask for read access to the product source, and to the website source for the real tokens.
 
 ## Running the loop

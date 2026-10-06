@@ -1,6 +1,6 @@
 # 08 · Gotchas
 
-Every pitfall the Griffel build actually hit, as symptom → cause → fix. Scan the section for the tool you are about to use. Most were quick to fix once understood; the cost was in finding them. A few rows come from later tests of the starter template (a 10 s teaser built from it, and the checks that fixed what it found); they say so.
+Every pitfall the Griffel build actually hit, as symptom → cause → fix. Scan the section for the tool you are about to use. Most were quick to fix once understood; the cost was in finding them. A few rows come from later tests of the starter template (a 10 s teaser built from it, and the checks that fixed what it found); they say so. Two rows in section 4 come from the HyperFrames source and release notes up to 0.8.138, not from the case; they say so too.
 
 Two sections are different. Section 11 (platforms) comes from the distribution research rather than from failed uploads, because nothing had been published yet. Section 12 lists issues reported by others that the case did not run into, so you recognise them if they appear.
 
@@ -76,14 +76,16 @@ These are not bugs, but each was flagged by critics as an amateur tell and each 
 
 | Symptom | Cause | Fix |
 |---|---|---|
-| `npm install hyperframes@latest` fails or resolves an older version | The machine's npm configuration enforced a 7-day minimum release age, and HyperFrames ships several releases a day | Pin an exact version at least that old (the case used 0.8.68); `save-exact=true` in `.npmrc`. |
+| `npm install hyperframes@latest` fails or resolves an older version | The machine's npm configuration enforced a 7-day minimum release age, and HyperFrames ships several releases a day | Pin an exact version at least that old; `save-exact=true` in `.npmrc`. The case used 0.8.68; take 0.8.81 or newer now (05 §8). |
 | After a retime, the render still produced the old length (2,880 frames instead of 3,168) | A static `data-duration` on the root element wins over one set from script | Remove the static attribute; set it from an inline script right after the root element. |
 | `hyperframes lint` reports `root_composition_missing_duration_source` and `missing_timeline_registry` | The fix above, and a page that drives its own seek function | False positives in this setup. Note them in the project docs so nobody "fixes" them. |
-| The render refuses to start a 480 fps (or 240 fps) PNG job | The disk pre-check estimated about 5.8 MB per frame (67 GB for one 240 fps pass) against about 0.2 MB real | Capture directly with `window.__seek` (`capture_seq.mjs`). |
-| No way to ask for more than 240 fps, and no motion-blur flag | CLI limits (the engine's blur was not exposed on `render`) | Capture at N × fps yourself and blend with ffmpeg `tmix` (05 §3). |
-| The MP4 shifts brand colours and bands gradients | The renderer's own encode | Render `--format png-sequence` and encode with the explicit BT.709 chain (05 §5). |
-| Usage data leaves the machine | Telemetry is on by default | `HYPERFRAMES_NO_TELEMETRY=1` in every command's environment. |
-| Two renders of the same page differ slightly | On Windows and macOS it uses screenshot capture; BeginFrame (deterministic) is Linux-only | Accept small noise; compare with a tolerance. |
+| The render refuses to start a 480 fps (or 240 fps) PNG job | The disk pre-check estimates raw RGBA (width × height × 4 bytes per frame: about 5.8 MB at 1080 × 1350, 67 GB for one 240 fps pass) against about 0.2 MB real, and has no override. Still so at 0.8.138; fix PR #4061 is open | Capture directly with `window.__seek` (`capture_seq.mjs`). |
+| No way to ask for more than 240 fps, and no motion-blur flag | CLI limits: the engine's blur is reachable only from the Node API (`@hyperframes/producer`). Still so at 0.8.138 (issue #4833, draft PR #4072) | Capture at N × fps yourself and blend with ffmpeg `tmix` (05 §3). |
+| The MP4 shifts brand colours and bands gradients | The renderer's own encode: an implicit BT.601 matrix under a BT.709 tag (fixed in 0.8.81), and 8 bit without dither from JPEG-captured frames (not fixed) | Render `--format png-sequence` and encode with the explicit BT.709 chain (05 §5), for critic drafts too (05 §2). From 0.8.81 on its MP4 is fine for a quick look. |
+| Usage data leaves the machine | Telemetry is on by default | `HYPERFRAMES_NO_TELEMETRY=1` (or `DO_NOT_TRACK=1`) in every command's environment, or `hyperframes telemetry disable` once. |
+| Two renders of the same page differ slightly | Screenshot capture, which `png-sequence` uses on every platform (`--docker` included) unless `--experimental-fast-capture` forces draw-element capture. Only an MP4 render on Linux with chrome-headless-shell gets BeginFrame (05 §8) | Accept small noise; compare with a tolerance. |
+| The stage colour comes out transparent or black in a PNG sequence | *From source, not hit in the case:* the capture clears the html and body backgrounds; only the composition root keeps its own | Paint the stage on an element (the template's `stage` part does), never on `body`. |
+| Key frames look slightly different after a HyperFrames upgrade | *From release notes, not hit in the case:* 0.8.113 and 0.8.116 changed how a seek lands on an exact tween boundary; 0.8.69 fixed a font race between worker counts | Re-take the key stills after every upgrade and compare before rendering. |
 
 ---
 

@@ -26,7 +26,7 @@ The Griffel logo and wordmark in `assets/logo/` are © Griffel and **not** licen
 
 ## Requirements
 
-- **Node 22.12 or newer.** HyperFrames 0.8.68 and puppeteer-core need it.
+- **Node 22.12 or newer.** HyperFrames and puppeteer-core need it. The case pinned HyperFrames 0.8.68; for a new project, see [05 §8](../../launch-film/references/05-render-and-encode.md#8-hyperframes-as-an-option) for its state as of 0.8.138.
 - **Google Chrome.** The tools default to the Windows install path; set `CHROME_PATH` on macOS or Linux, for example `CHROME_PATH="/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"`.
 - **ffmpeg** on `PATH`. It is used for contact sheets, encodes and audio.
 - **Python 3 with numpy and Pillow,** for the encode, check and audio tools.

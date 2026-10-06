@@ -291,10 +291,11 @@
   // Optional HyperFrames bridge: if GSAP is loaded, a paused timeline "main" with one proxy tween
   // calls Film.render, and the `hf-seek` event is honoured, so the same pages also render with
   // `npx hyperframes render` (HyperFrames reads the root's data-duration, written here). It is
-  // not needed by this project's own tools. If you use it: pin a version, set
+  // not needed by this project's own tools. If you use it: pin a version (0.8.81+), set
   // HYPERFRAMES_NO_TELEMETRY=1, and keep data-duration OFF the static markup (a static value
-  // wins over the script-set one). On Windows it captures screenshots, so it is not
-  // byte-reproducible, and its disk pre-check may refuse 480 fps sequences.
+  // wins over the script-set one). It captures PNG sequences with screenshots on
+  // every platform, so they are not byte-reproducible, and its disk pre-check may refuse
+  // high-rate PNG jobs (in the case, each 240 fps pass).
   // window.T_OFFSET (output seconds, default 0) shifts only the HyperFrames time.
   // Change T.DURATION / T.SCALE only before boot.
   Film.boot = function () {

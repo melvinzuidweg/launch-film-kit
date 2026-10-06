@@ -197,10 +197,13 @@ breaking it cost hours on the reference film.
 
 ## Optional: HyperFrames
 
-The pages also expose a paused GSAP timeline (`window.__timelines.main`) and honour the
-`hf-seek` event, so `npx hyperframes render` can render them. This project does not need it: its
-own capture is direct, supports 480 fps and gives stills that match the frames. If you use it,
-pin a version, set `HYPERFRAMES_NO_TELEMETRY=1`, and keep `data-duration` off the static markup.
+The pages carry HyperFrames' composition attributes on the root, expose a paused GSAP timeline
+(`window.__timelines.main`) and honour the `hf-seek` event, so `npx hyperframes render` can render
+them. This project does not need it: its own capture is direct, supports 480 fps and gives stills
+that match the frames. If you use it, pin an exact version (0.8.81 or newer), set
+`HYPERFRAMES_NO_TELEMETRY=1`, keep `data-duration` off the static markup, and use it for drafts:
+its CLI still has no motion blur and stops at 240 fps. The kit's `references/05-render-and-encode.md` §8 has the state
+as of HyperFrames 0.8.138 (October 2026).
 
 ## Licences
 
